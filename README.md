@@ -54,7 +54,7 @@ A `Dockerfile` is provided to build and run the service in a Docker container.
     python -m venv venv
     ```
     - Activate environment
-        - windows `venv\Scripts\activate`
+        - windows `cd .\venv\Scripts\` and `.\activate`
         - mac `source venv/bin/activate`
         >The commands may vary.
    - Using requirements.txt:
@@ -71,7 +71,7 @@ A `Dockerfile` is provided to build and run the service in a Docker container.
     ```bash
     jupyter notebook notebook.ipynb
     ```
-    or run in VS code by installing required dependencies.
+    if you have jupyter installed or run in VS code by installing required dependencies.
 
 2. Train the final model:
     ```bash
