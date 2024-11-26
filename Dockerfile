@@ -16,7 +16,7 @@ COPY image.png /app/
 
 
 # Dependencies
-RUN pip install -r --no-cache-dir requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose ports for Streamlit and Flask
 EXPOSE 8501 5000
