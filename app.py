@@ -50,8 +50,8 @@ if st.button("Predict"):
     st.write("Prediction Results:")
     if response.status_code == 200:
         result = response.json()  # Parse the JSON response
+        st.write("The bar represents the confidence level of the prediction or probability of the prediction.")
         for model, prediction in result.items():
-            st.write("The bar represents the confidence level of the prediction or probability of the prediction.")
             st.write(f"{model}: {prediction['pred']}")
             prob=prediction['prob'] if prediction['pred']==1 else 1-prediction['prob']
             # Confidence level
