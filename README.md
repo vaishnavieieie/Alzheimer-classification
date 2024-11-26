@@ -103,6 +103,3 @@ Interact with the Interface by giving input values and clicking on `predict` but
 4. Access the interface at `http://localhost:8501/`
 ![alt text](ui1.png)
 ![alt text](ui2.png)
-
-
-

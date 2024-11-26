@@ -1,7 +1,7 @@
 import streamlit as st
 import requests  # to send HTTP requests
 
-st.title("Dementia Prediction")
+st.title("Alzheimer Prediction")
 # Hero section 2 columns
 col1, col2 = st.columns([1, 2])
 with col1:
@@ -50,7 +50,6 @@ if st.button("Predict"):
     st.write("Prediction Results:")
     if response.status_code == 200:
         result = response.json()  # Parse the JSON response
-        st.write("The bar represents the confidence level of the prediction or probability of the prediction.")
         for model, prediction in result.items():
             st.write(f"{model}: {prediction['pred']}")
             prob=prediction['prob'] if prediction['pred']==1 else 1-prediction['prob']
